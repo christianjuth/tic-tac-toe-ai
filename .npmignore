@@ -1,0 +1,4 @@
+assembly/
+src/
+*.wat
+wasm.map

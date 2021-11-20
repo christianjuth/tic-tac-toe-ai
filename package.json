@@ -1,0 +1,24 @@
+{
+  "name": "tic-tac-toe-npm-package",
+  "version": "0.0.1",
+  "main": "lib/index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@assemblyscript/loader": "^0.19.20",
+    "assemblyscript": "^0.19.20"
+  },
+  "scripts": {
+    "asbuild:untouched": "asc assembly/index.ts --target debug",
+    "asbuild:optimized": "asc assembly/index.ts --target release",
+    "asbuild": "npm run asbuild:optimized",
+    "test": "node tests",
+    "build": "tsc"
+  },
+  "dependencies": {
+    "@assemblyscript/loader": "^0.19.20",
+    "typescript": "^4.5.2"
+  },
+  "author": "Christian Juth",
+  "description": "Tic Tac Toe AI",
+  "repository": "git@github.com:christianjuth/tic-tac-toe-ai.git"
+}
